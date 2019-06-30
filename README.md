@@ -1,1 +1,1 @@
-# CI Tutorial for JS (React app ;)) 
+# CI Tutorial for JS (React app)
