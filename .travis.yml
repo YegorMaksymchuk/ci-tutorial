@@ -4,12 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
-stages:
-  - name: test
-    before_script: echo "TEST"
-    script: npm test
-  - name: build
-    before_script: echo "BUILD"
-    script: npm run build
+include:
+    - stage: test
+      script: npm test
+    - stage: build
+      script: npm run build
 on:
   branch: master
