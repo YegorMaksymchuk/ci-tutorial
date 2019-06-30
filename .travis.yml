@@ -1,10 +1,8 @@
 language: node_js
 node_js:
   - "stable"
-cache:
-  directories:
-    - node_modules
-include:
+job:
+  include:
     - stage: test
       script: npm test
     - stage: build
